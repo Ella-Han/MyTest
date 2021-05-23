@@ -1,0 +1,22 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+target 'MyTest' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for MyTest
+
+
+pod 'RxSwift'
+pod 'RxCocoa'
+pod 'RxDataSources'
+pod 'RxGesture'
+end
+
+#Installing Differentiator (5.0.0)
+#Installing RxCocoa (6.1.0)
+#Installing RxDataSources (5.0.0)
+#Installing RxGesture (4.0.2)
+#Installing RxRelay (6.1.0)
+#Installing RxSwift (6.1.0)
