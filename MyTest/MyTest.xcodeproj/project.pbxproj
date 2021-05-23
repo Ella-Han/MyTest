@@ -24,6 +24,7 @@
 		F8847B402659321C00B538D9 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8847B3F2659321C00B538D9 /* UIView+Extension.swift */; };
 		F8847B422659407E00B538D9 /* ContentMessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8847B412659407E00B538D9 /* ContentMessageView.swift */; };
 		F8847B442659408F00B538D9 /* ContentMessageView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F8847B432659408F00B538D9 /* ContentMessageView.xib */; };
+		F8847B46265A8AA100B538D9 /* MessageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8847B45265A8AA100B538D9 /* MessageModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +49,7 @@
 		F8847B3F2659321C00B538D9 /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
 		F8847B412659407E00B538D9 /* ContentMessageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentMessageView.swift; sourceTree = "<group>"; };
 		F8847B432659408F00B538D9 /* ContentMessageView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ContentMessageView.xib; sourceTree = "<group>"; };
+		F8847B45265A8AA100B538D9 /* MessageModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MessageModel.swift; path = ../../../../../../Documents/MessageModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -134,6 +136,7 @@
 			isa = PBXGroup;
 			children = (
 				F8847B2B265921CE00B538D9 /* MessageListViewModel.swift */,
+				F8847B45265A8AA100B538D9 /* MessageModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -308,6 +311,7 @@
 				F8847B3D265930CA00B538D9 /* ReceivedMessageCell.swift in Sources */,
 				F8847B2C265921CE00B538D9 /* MessageListViewModel.swift in Sources */,
 				F8847B3426592B9000B538D9 /* ChatRoomUseCase.swift in Sources */,
+				F8847B46265A8AA100B538D9 /* MessageModel.swift in Sources */,
 				F8847B122659205300B538D9 /* AppDelegate.swift in Sources */,
 				F8847B2F265921E100B538D9 /* MessageListViewController.swift in Sources */,
 				F8847B402659321C00B538D9 /* UIView+Extension.swift in Sources */,

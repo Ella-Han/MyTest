@@ -8,7 +8,7 @@
 import Foundation
 
 struct ChatMessage {
-    let messageId: Int64
+    let messageId: Int
     let senderName: String
     let message: String
 }

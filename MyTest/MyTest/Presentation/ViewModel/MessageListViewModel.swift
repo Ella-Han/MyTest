@@ -15,14 +15,14 @@ protocol MessageListViewModelInput {
 }
 
 protocol MessageListViewModelOutput {
-    var items: PublishRelay<[MessageItemViewModel]> { get }
+    var items: PublishRelay<[MessageSection]> { get }
     var isFetching: PublishRelay<Bool> { get }
 }
 
 protocol MessageListViewModel: MessageListViewModelInput, MessageListViewModelOutput {}
 
 final class DefaultMessageListViewModel: MessageListViewModel {
-    let items = PublishRelay<[MessageItemViewModel]>()
+    let items = PublishRelay<[MessageSection]>()
     let isFetching = PublishRelay<Bool>()
     
     private let bag = DisposeBag()
@@ -41,18 +41,9 @@ extension DefaultMessageListViewModel {
             .asDriverOnErrorJustComplete()
             .drive(onNext: {
                 self.isFetching.accept(false)
-                self.items.accept($0.map { MessageItemViewModel(chatMsg: $0)})
+                let viewModels = $0.map { MessageItemViewModel(chatMsg: $0)}
+                self.items.accept([MessageSection(header: 0, items: viewModels)])
             })
             .disposed(by: bag)
-    }
-}
-
-struct MessageItemViewModel {
-    let message: String
-    let senderName: String
-    
-    init(chatMsg: ChatMessage) {
-        message = chatMsg.message
-        senderName = chatMsg.senderName
     }
 }
